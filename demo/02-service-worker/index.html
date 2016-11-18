@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello, Service Workers!</h1>
+	<img src="img.jpg"/>
+	<script>
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker
+		    .register('./sw.js')
+		    .then(reg => { 
+		     	console.log('Service Worker has been registered!');
+		     }); 
+		}		
+	</script>
+</body>
+</html>
